@@ -1,0 +1,545 @@
+/* Estilos Generales*/
+*{
+
+      font-family: "Poppins", sans-serif !important;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.oscurecer-fondo{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 83, 83, 0.37);
+}
+
+.whatsapplogo{
+    width: 3rem;
+    bottom: 3rem;
+    right: 3rem;
+    
+}
+
+.fondowpp{
+    background-color: rgba(73, 73, 122, 0.836);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/* Estilos Header */
+
+.logotipo{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.l-logotipo{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.logotipohistoria{
+    width: 13rem;
+    height: 11rem;
+    margin-top: 2%;
+}
+
+.index-header, .dispensers-header, .contacto-header{
+
+    background-image: url(../imagenes/aguarevueltamejorada.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: brightness(135%);
+    background-position: center;
+    height: 100vh;
+    position:relative;    
+}
+
+.contacto-header{
+  background-image: url(../imagenes/fondomardelplata.webp);
+}
+
+.dispensers-header{
+    background-image: url(../imagenes/camionetas.jpeg);
+    filter: brightness(105%);
+}
+
+.index-headerhistoria{
+    background-image: url(../imagenes/fotoreal.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    background-position: center;
+    height: 100vh;
+    position:relative;  
+    max-width: unset;
+}
+
+.contenedor-inferior-header, .contenedor-inferior-headerdispensers{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    
+    height: 50%;
+    max-width: 30rem;
+    margin-left: 1rem;
+}
+
+.contenedor-inferior-headerhistoria{
+  justify-content:center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.historiadeontario{
+  max-width: 1100px;
+  width: 100%;
+  height: 30%;
+  max-height: 100px;
+}
+
+.index-header-flex, .index-header-flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navegacion-superior ul li a{
+
+    color:rgb(5, 5, 58);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 2px 2px rgb(249, 253, 253);
+    text-transform: uppercase;
+    font-style:italic;
+}
+
+.navegacion-superioreshistoria ul li a{
+        color:rgb(231, 240, 240);
+        text-transform: uppercase;
+        text-shadow: 2px 2px rgb(6, 73, 73);
+        font-weight: bolder;
+}
+
+.index-h1, .index-h1dispensers{
+    color: rgb(11, 44, 83);
+    text-decoration:underline;
+    background-size: 14rem;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.index-h1historia{
+    color: rgb(11, 44, 83);
+    text-decoration:underline;
+    background-size: 15rem;
+    font-weight:bolder;
+    font-size: x-large; 
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: 4px 4px rgb(218, 233, 233);   
+}
+
+.test{
+    background-color: rgba(111, 111, 175, 0.959) !important;
+}
+
+.index-h1dispensers{
+  color: rgba(252, 253, 253, 0.973);
+  text-shadow:  4px 4px rgba(5, 20, 49, 0.938); 
+}
+
+.index-parrafoheader, .index-parrafoheaderdisoensers{
+    color:rgb(12, 43, 78);
+    font-weight: 600;   
+}
+
+.index-parrafoheaderhistoria{
+   color: rgb(11, 44, 83);
+   font-size: 16px;
+   padding: 10px;
+  font-weight: 900;
+  text-shadow:  3px 3px rgba(249, 250, 252, 0.938);
+  text-align: justify;
+  margin-top: 3%;
+  display: flex;
+}
+
+.index-parrafoheaderdispensers{
+  color: rgba(4, 4, 53, 0.973);
+  font-size: large;
+  font-weight: 900;
+  text-shadow:  3px 3px rgba(249, 250, 252, 0.938);
+}
+
+.botonheader, .botonheaderdispensers{
+    width: 15rem;
+    background-color: rgba(13, 13, 112, 0.425);
+    color: rgb(184, 207, 226);
+    border: none;
+    font-weight: 600;
+    padding: 12px 4px;
+    margin-top:1%;
+    cursor: pointer;
+}
+
+.botonheaderdispensers{
+    color: rgb(211, 221, 230);
+    background-color: rgba(22, 80, 119, 0.849);
+}
+
+.contacto-header-container{
+    font-size:x-large;
+    margin-top: -5%;
+    position: relative;
+    text-align: left;
+    margin: 1.5%;
+    text-shadow:  1.5px 1.5px rgba(175, 196, 238, 0.938); 
+}
+
+/* Estilos Main*/
+
+.index-main, .index-main-dispensers{
+
+    margin: 2rem 0;
+    background-color: rgb(236, 245, 244);
+}
+
+.bodycontacto{
+    background-color: rgba(147, 166, 218, 0.733);
+}
+
+.index-main-contactarnos{
+     margin: 2rem 0;
+    background-color: rgba(17, 71, 78, 0.5);
+}
+
+.productosdisponibles-título, .dispenserdisponibles-título, .dondeencontrarnos-título{
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: rgba(233, 234, 238, 0.651);
+}
+
+.dondeencontrarnos-título{
+        background-color: rgba(38, 199, 164, 0.418);
+}
+
+.bidondiez{
+    width: 17rem;
+    background-color: rgba(158, 165, 179, 0.521);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.bidondiez img{
+    width: 17rem;
+    height:22rem;
+}
+
+.bidondiezprecio{
+    color: rgb(35, 89, 136);
+    font-weight: 400; 
+}
+
+.bidondiezprecio span{
+    text-decoration: line-through;
+    color: black;
+    text-align: center;
+}
+
+.bidonveinte{
+    width: 17rem;
+    background-color: rgba(158, 165, 179, 0.521);
+    text-align: center;
+}
+
+.bidonveinte img{
+    width: 17rem;
+    height:22rem;
+}
+
+.bidonveinteprecio{
+    color: rgb(35, 89, 136);
+    font-weight: 600;
+}
+
+.bidonveinteprecio span{
+    
+    text-decoration: line-through;
+    color: black;
+}
+
+.botoncomprarchico{
+    width: 50%;
+    background-color: rgba(231, 238, 240, 0.87);
+    padding: 0,5rem;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.botoncomprargrande{
+    width: 50%;
+    background-color: rgba(231, 238, 240, 0.87);
+    padding: 0,5rem;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dispensernaturalchico, .ldispensernaturalchico{
+    width: 19rem;
+    background-color: rgba(121, 139, 175, 0.521);
+    text-align: center;
+}
+
+.dispensernaturalchico img{
+    width: 17rem;
+    height:20rem;
+} 
+
+.ldispensernaturalchico img{
+    width: 17rem;
+    height:22rem;
+}
+
+.botoncomprardispensernatural, .lbotoncomprardispensernatural{
+    width: 50%;
+    height: 5%;
+    background-color: rgba(158, 199, 211, 0.87);
+    padding: 0,5rem;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.ldispenserfriocalormediano{
+    width: 19rem;
+    background-color: rgba(121, 139, 175, 0.521);
+    text-align: center;
+}
+
+.ldispenserfriocalormediano img{
+     width: 17rem;
+    height:22rem;   
+}
+
+.lbotoncomprardispenserfriocalormediano{
+    width: 50%;
+    height: 5%;
+    background-color: rgba(158, 199, 211, 0.87);
+    padding: 0,5rem;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dispenserfriocalorgrande, .ldispenserfriocalorgrande{
+    width: 19rem;
+    background-color: rgba(121, 139, 175, 0.521);
+    text-align: center;
+}
+
+.dispenserfriocalorgrande img, .ldispenserfriocalorgrande img{
+     width: 17rem;
+    height:22rem;
+}
+
+.botoncomprardispenserfriocalor, .lbotoncomprardispenserfriocalor{
+
+    width: 50%;
+    height: 5%;
+    background-color: rgba(158, 199, 211, 0.87);
+    padding: 0,5rem;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.dispenserdisponibles-título{
+      background-color: rgba(24, 53, 112, 0.521);
+    text-align: center;  
+}
+
+.ldispenserfriocalorgrandeheladera{
+    width: 19rem;
+    background-color: rgba(121, 139, 175, 0.521);
+    text-align: center;
+}
+
+.ldispenserfriocalorgrandeheladera img{
+    width: 17rem;
+    height:20rem;
+}
+
+.lbotoncomprardispenserfriocalor{
+     width: 50%;
+    height: 5%;
+    background-color: rgba(158, 199, 211, 0.87);
+    padding: 0,5rem;
+    display: block;
+    margin: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.frase{
+
+    color: rgb(35, 89, 136);
+    font-weight: 900;
+}
+
+.todaslasimagenesdelosproductos-container, .todaslasimagenesdelosdispensers-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mapa-mardelplata{
+  margin: auto;
+}
+
+/* Estilos Footer*/
+
+.footerderechos{
+    font-weight: 500;
+    text-align: center;
+}
+
+.redessociales{
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(155, 155, 187, 0.733);
+}
+
+.footer-container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.logotipoFooter{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    mix-blend-mode: multiply;  
+}
+
+.logotipoFooteruno{
+   width: 4rem;
+    height: 5rem;
+    object-fit: cover;
+    mix-blend-mode: multiply;   
+}
+
+footer{
+    background-color: rgba(195, 214, 219, 0.788);
+}
+
+.frase{
+    text-align: center;
+    text-shadow: 3px 3px rgba(55, 204, 192, 0.603);
+    font-size:x-large;
+}
+
+.footercontainer-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0.2rem;
+grid-row-gap: 0.2rem;
+text-align: center;
+}
+
+.footercontainer-primerhijo { grid-area: 1 / 1 / 2 / 4; background-color: rgba(127, 158, 216, 0.767);}
+.footercontainer-segundohijo { grid-area: 2 / 1 / 3 / 4; background-color: rgba(61, 97, 163, 0.767);}
+.footercontainer-tercerhijo { grid-area: 3 / 1 / 4 / 4; background-color: rgba(23, 54, 110, 0.767);}
+
+
+.footercontainer-primerhijo h4, .footercontainer-primerhijo p,
+.footercontainer-segundohijo h4, .footercontainer-segundohijo p,
+.footercontainer-tercerhijo h4, .footercontainer-tercerhijo p{
+    color: rgba(5, 9, 44, 0.897);
+}
+
+.footercontainer-griddispensers{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0.2px;
+grid-row-gap: 0.2rem;
+}
+
+.footercontainer-primerhijodispensers, .footercontainer-primerhijocontacto { grid-area: 1 / 1 / 2 / 3; background-color: rgb(86, 86, 184); text-align: center;}
+.footercontainer-segundohijodispensers, .footercontainer-segundohijocontacto{ grid-area: 1 / 3 / 2 / 6; background-color: rgb(44, 70, 124); text-align: center;}
+.footercontainer-tercerhijodispensers, .footercontainer-tercerhijocontacto{ grid-area: 1 / 3 / 2 / 4; background-color: rgb(65, 54, 167); text-align: center;}
+
+
+ @media only screen and (min-width: 900px){
+   
+    ul,.index-header-flex{
+      flex-direction: row;
+   }
+.footercontainer-primerhijo h4{ grid-area: 1 / 1 / 2 / 4; background-color: rgba(127, 158, 216, 0.767);}
+.footercontainer-segundohijo h4{ grid-area: 2 / 1 / 3 / 4; background-color: rgba(61, 97, 163, 0.767);}
+.footercontainer-tercerhijo h4{ grid-area: 3 / 1 / 4 / 4; background-color: rgba(23, 54, 110, 0.767);}
+}
+
+.botonheader{
+    width: 100%;
+}
+
+ @media (max-width: 360px){
+
+ #index-parrafoheaderhistoria{
+    font-size: 14px !important;
+    padding: 5px !important;
+ }
+}
+ 
+@media (min-width: 768px) and (max-width:1023px){
+    #index-parrafoheaderhistoria{
+        font-size: 15px !important;
+        padding: 8px !important;
+ }
+}
+
+@media (min-width:767px){
+ 
+#historiadeontario{
+ font-size: 14px !important;
+ padding: 5px !important;
+  }
+ } 
+
