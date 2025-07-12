@@ -62,7 +62,15 @@ ul{
     margin-top: 2%;
 }
 
-.index-header, .dispensers-header, .contacto-header{
+.logotipopreguntas{
+    filter: brightness(78%);
+    width: 9rem;
+    height: 9rem;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.index-header, .dispensers-header, .contacto-header, .preguntas-header{
 
     background-image: url(../imagenes/aguarevueltamejorada.jpeg);
     background-size:cover;
@@ -71,6 +79,25 @@ ul{
     background-position: center;
     height: 100vh;
     position:relative;    
+}
+
+.titulo-preguntas {
+  font-size: 2.5rem;
+  color: #091d27;
+  margin-top: 10rem;
+  text-shadow: 4px 4px rgb(92, 240, 240);
+}
+.preguntas-header{
+    background-image: url(../imagenes/faqs2.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 .contacto-header{
@@ -136,7 +163,7 @@ ul{
     font-style:italic;
 }
 
-.navegacion-superioreshistoria ul li a{
+.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a{
         color:rgb(231, 240, 240);
         text-transform: uppercase;
         text-shadow: 2px 2px rgb(6, 73, 73);
@@ -294,7 +321,7 @@ ul{
 .botoncomprarchico{
     width: 50%;
     background-color: rgba(231, 238, 240, 0.87);
-    padding: 0,5rem;
+    padding: 0.5rem;
     display: block;
     margin: auto;
     text-transform: uppercase;
@@ -304,7 +331,7 @@ ul{
 .botoncomprargrande{
     width: 50%;
     background-color: rgba(231, 238, 240, 0.87);
-    padding: 0,5rem;
+    padding: 0.5rem;
     display: block;
     margin: auto;
     text-transform: uppercase;
@@ -331,7 +358,7 @@ ul{
     width: 50%;
     height: 5%;
     background-color: rgba(158, 199, 211, 0.87);
-    padding: 0,5rem;
+    padding: 0rem;
     display: block;
     margin: auto;
     text-transform: uppercase;
@@ -353,7 +380,7 @@ ul{
     width: 50%;
     height: 5%;
     background-color: rgba(158, 199, 211, 0.87);
-    padding: 0,5rem;
+    padding: 0rem;
     display: block;
     margin: auto;
     text-transform: uppercase;
@@ -376,7 +403,7 @@ ul{
     width: 50%;
     height: 5%;
     background-color: rgba(158, 199, 211, 0.87);
-    padding: 0,5rem;
+    padding: 0rem;
     display: block;
     margin: auto;
     text-transform: uppercase;
@@ -403,7 +430,7 @@ ul{
      width: 50%;
     height: 5%;
     background-color: rgba(158, 199, 211, 0.87);
-    padding: 0,5rem;
+    padding: 0.5rem;
     display: block;
     margin: auto;
     text-transform: uppercase;
@@ -482,9 +509,23 @@ grid-row-gap: 0.2rem;
 text-align: center;
 }
 
+.footercontainerfaqs-grid{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-row-gap: 0px;
+text-align: center;
+}
+
 .footercontainer-primerhijo { grid-area: 1 / 1 / 2 / 4; background-color: rgba(127, 158, 216, 0.767);}
 .footercontainer-segundohijo { grid-area: 2 / 1 / 3 / 4; background-color: rgba(61, 97, 163, 0.767);}
 .footercontainer-tercerhijo { grid-area: 3 / 1 / 4 / 4; background-color: rgba(23, 54, 110, 0.767);}
+
+.footercontainerfaqs-primerhijo { grid-area: 1 / 1 / 2 / 2; background-color: rgba(127, 158, 216, 0.589);}
+.footercontainerfaqs-segundohijo { grid-area: 2 / 1 / 3 / 2; background-color: rgba(46, 81, 145, 0.397);}
+.footercontainerfaqs-tercerhijo { grid-area: 3 / 1 / 4 / 2; background-color: rgba(39, 70, 128, 0.541);}
+.footercontainerfaqs-cuartohijo { grid-area: 4 / 1 / 5 / 2; background-color: rgba(20, 42, 85, 0.603);}
+.footercontainerfaqs-quintohijo { grid-area: 5 / 1 / 6 / 2; background-color: rgba(11, 32, 70, 0.644); }
 
 
 .footercontainer-primerhijo h4, .footercontainer-primerhijo p,
@@ -522,14 +563,14 @@ grid-row-gap: 0.2rem;
 
  @media (max-width: 360px){
 
- #index-parrafoheaderhistoria{
+ .index-parrafoheaderhistoria{
     font-size: 14px !important;
     padding: 5px !important;
  }
 }
  
 @media (min-width: 768px) and (max-width:1023px){
-    #index-parrafoheaderhistoria{
+    .index-parrafoheaderhistoria{
         font-size: 15px !important;
         padding: 8px !important;
  }
@@ -537,9 +578,47 @@ grid-row-gap: 0.2rem;
 
 @media (min-width:767px){
  
-#historiadeontario{
+.historiadeontario{
  font-size: 14px !important;
  padding: 5px !important;
   }
  } 
 
+@media (max-width: 576px) {
+   .preguntas-header{
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logotipo, .l-logotipo, .logotipohistoria, .logotipopreguntas {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem auto;
+  }
+
+  .contenedor-inferior-header, .contenedor-inferior-headerdispensers {
+    margin-left: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .todaslasimagenesdelosproductos-container, .todaslasimagenesdelosdispensers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footercontainer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .preguntas-header {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+  }
+}

@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agua Ontario</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
-<body>
-    
+
+<body class="bodypreguntas">
+
+  <!-- HEADER -->
+  <header class="preguntas-header">
+      <h1 class="titulo-preguntas">PREGUNTAS FRECUENTES</h1>
+    </div>
+    <div class="oscurecer-fondopreguntas">
+      <div class="index-header-flex">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed top-0 test">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img class="logotipopreguntas" src="../imagenes/logotipodos.jpeg" alt="Logo Agua Ontario" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbarfaqs-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/nuestrahistoria.html">Nuestra Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/dispensers.html">Dispensers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/faqs.html">FAQS</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+      <!-- WHATSAPP -->
+      <div class="fondowpp d-flex justify-content-center align-items-center position-fixed">
+        <img class="whatsapplogo position-fixed" src="/imagenes/whatsapplogo.webp" alt="Botón WhatsApp" />
+      </div>
+
+    </div>
+  </header>
+
+  <!-- FOOTER -->
+  <footer class="p-1">
+    <p class="footerderechos py-3 m-0">-Todos los derechos reservados-</p>
+
+    <div class="footercontainerfaqs-grid">
+
+      <div class="footercontainerfaqs-primerhijo">
+        <h4>¿CÓMO REPARTIMOS?</h4>
+        <p>El cliente se comunica a través de nuestro Whatsapp y a la brevedad se acuerda día y horario del reparto.</p>
+      </div>
+
+      <div class="footercontainerfaqs-segundohijo">
+        <h4>¿TENEMOS ASEGURADA LA CALIDAD DE NUESTROS PRODUCTOS?</h4>
+        <p>Sí, nuestra agua pasa controles mensuales y nuestras máquinas frío/calor son nuevas, directo de fábrica.</p>
+      </div>
+
+      <div class="footercontainerfaqs-tercerhijo">
+        <h4>¿TENEMOS "PROPUESTAS PARA EMPRESAS"?</h4>
+        <p>Así es. Contamos con promociones para grandes consumos.</p>
+      </div>
+
+      <div class="footercontainerfaqs-cuartohijo">
+        <h4>¿RETIRAN LOS BIDONES QUE NO FUERON CONSUMIDOS?</h4>
+        <p>No, el cliente consume lo que ha abonado. Reponemos según las necesidades de cada cliente.</p>
+      </div>
+
+      <div class="footercontainerfaqs-quintohijo">
+        <h4>¿QUIÉNES HACEN EL REPARTO?</h4>
+        <p>Tanto los empleados como el dueño del reparto, porque valoramos el trato directo y humano que nos identifica.</p>
+      </div>
+
+    </div>
+
+    <p class="redessociales">Nuestras Redes Sociales</p>
+
+    <div class="footer-container-flex">
+      <a href="https://www.instagram.com/aguaontario" target="_blank">
+        <img class="logotipoFooter" src="../imagenes/logoinstagram.webp" alt="Instagram Agua Ontario" />
+      </a>
+      <a href="https://www.facebook.com/agua.ontario/" target="_blank">
+        <img class="logotipoFooteruno" src="../imagenes/logotipofacebook.jpg" alt="Facebook Agua Ontario" />
+      </a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
