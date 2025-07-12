@@ -1,0 +1,651 @@
+/* Estilos Generales*/
+
+//Variables 
+
+$background-colorbotones:rgba(231, 238, 240, 0.87);
+$background-colorindex: rgb(11, 44, 83);
+$background-colorletras: black;
+$background-colorfooterhijos: rgba(127, 158, 216, 0.589);
+$background-colorfooterhijosmedio: rgba(61, 97, 163, 0.767);
+$background-colorfooterhijosmediomas: rgba(23, 54, 110, 0.767);
+$background-colortextshadow: rgba(249, 250, 252, 0.938);
+$background-colorprecio: rgb(35, 89, 136);
+$background-colorbidones: rgba(158, 165, 179, 0.521);
+$background-coloroscuro: rgba(7, 7, 68, 0.973);
+$background-colorgrisazulado: rgba(121, 139, 175, 0.521);
+
+//Extend
+
+.flexbasico{
+   display: flex;
+   align-items: center;
+}
+
+.cursor{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.paddingdisplay{
+    padding: 0rem;
+    display: block;
+}
+
+.mediciones{
+    width: 17rem;
+    height: 22rem; 
+}
+
+.margin{
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.font{
+     font-weight: bolder;
+    font-size: x-large;
+}
+
+
+*{
+
+      font-family: "Poppins", sans-serif !important;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    flex-direction: column;
+    gap: 2rem;
+    @extend .flexbasico;
+}
+
+.oscurecer-fondo{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 83, 83, 0.37);
+}
+
+.whatsapplogo{
+    width: 3rem;
+    bottom: 3rem;
+    right: 3rem;
+    
+}
+
+.fondowpp{
+    background-color: rgba(73, 73, 122, 0.836);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+/* Estilos Header */
+
+.logotipo{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.l-logotipo{
+    width: 8rem;
+    height: 8rem;
+@extend .margin;
+}
+
+.logotipohistoria{
+    width: 13rem;
+    height: 11rem;
+    margin-top: 2%;
+}
+
+.logotipopreguntas{
+    filter: brightness(78%);
+    width: 9rem;
+    height: 9rem;
+@extend .margin;
+}
+
+.index-header, .dispensers-header, .contacto-header, .preguntas-header{
+
+    background-image: url(../imagenes/aguarevueltamejorada.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: brightness(135%);
+    background-position: center;
+    height: 100vh;
+    position:relative;    
+}
+
+.titulo-preguntas {
+  font-size: 2.5rem;
+  color: $background-coloroscuro;
+  margin-top: 10rem;
+  text-shadow: 4px 4px rgb(92, 240, 240);
+}
+.preguntas-header{
+    background-image: url(../imagenes/faqs2.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.contacto-header{
+  background-image: url(../imagenes/fondomardelplata.webp);
+}
+
+.dispensers-header{
+    background-image: url(../imagenes/camionetas.jpeg);
+    filter: brightness(105%);
+}
+
+.index-headerhistoria{
+    background-image: url(../imagenes/fotoreal.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    background-position: center;
+    height: 100vh;
+    position:relative;  
+    max-width: unset;
+}
+
+.contenedor-inferior-header, .contenedor-inferior-headerdispensers{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    
+    height: 50%;
+    max-width: 30rem;
+    margin-left: 1rem;
+}
+
+.contenedor-inferior-headerhistoria{
+  justify-content:center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.historiadeontario{
+  max-width: 1100px;
+  width: 100%;
+  height: 30%;
+  max-height: 100px;
+}
+
+.index-header-flex, .index-header-flex1{
+   
+    flex-direction: column;
+    justify-content: space-between;
+    @extend .flexbasico;
+}
+
+.navegacion-superior ul li a{
+
+    color:rgb(5, 5, 58);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 2px 2px $background-colortextshadow;
+    text-transform: uppercase;
+    font-style:italic;
+}
+
+.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a{
+        color:rgb(231, 240, 240);
+        text-transform: uppercase;
+        text-shadow: 2px 2px rgb(6, 73, 73);
+        font-weight: bolder;
+}
+
+.index-h1, .index-h1dispensers{
+    color: $background-colorindex;
+    text-decoration:underline;
+    background-size: 14rem;
+@extend .font;
+}
+
+.index-h1historia{
+    color: $background-colorindex;
+    text-decoration:underline;
+    background-size: 15rem;
+@extend .font;
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: 4px 4px $background-colortextshadow;   
+}
+
+.test{
+    background-color: rgba(111, 111, 175, 0.959) !important;
+}
+
+.index-h1dispensers{
+  color: rgba(252, 253, 253, 0.973);
+  text-shadow:  4px 4px rgba(5, 20, 49, 0.938); 
+}
+
+.index-parrafoheader, .index-parrafoheaderdisoensers{
+    color:rgb(12, 43, 78);
+    font-weight: 600;   
+}
+
+.index-parrafoheaderhistoria{
+   color: $background-coloroscuro;
+   font-size: 16px;
+   padding: 10px;
+  font-weight: 900;
+  text-shadow:  3px 3px $background-colortextshadow;
+  text-align: justify;
+  margin-top: 3%;
+  display: flex;
+}
+
+.index-parrafoheaderdispensers{
+  color: $background-coloroscuro;
+  font-size: large;
+  font-weight: 900;
+  text-shadow:  3px 3px $background-colortextshadow;
+}
+
+.botonheader, .botonheaderdispensers{
+    width: 15rem;
+    background-color: $background-coloroscuro;
+    color: rgb(184, 207, 226);
+    border: none;
+    font-weight: 600;
+    padding: 12px 4px;
+    margin-top:1%;
+    cursor: pointer;
+}
+
+.botonheaderdispensers{
+    color: rgb(211, 221, 230);
+    background-color: rgba(22, 80, 119, 0.849);
+}
+
+.contacto-header-container{
+    font-size:x-large;
+    margin-top: -5%;
+    position: relative;
+    text-align: left;
+    margin: 1.5%;
+    text-shadow:  1.5px 1.5px rgba(175, 196, 238, 0.938); 
+}
+
+/* Estilos Main*/
+
+.index-main, .index-main-dispensers{
+
+    margin: 2rem 0;
+    background-color: rgb(236, 245, 244);
+}
+
+.bodycontacto{
+    background-color: rgba(147, 166, 218, 0.733);
+}
+
+.index-main-contactarnos{
+     margin: 2rem 0;
+    background-color: rgba(17, 71, 78, 0.5);
+}
+
+.productosdisponibles-título, .dispenserdisponibles-título, .dondeencontrarnos-título{
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: rgba(233, 234, 238, 0.651);
+}
+
+.dondeencontrarnos-título{
+        background-color: rgba(38, 199, 164, 0.418);
+}
+
+.bidondiez{
+    width: 17rem;
+    background-color: $background-colorbidones;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.bidondiez img{
+@extend .mediciones;
+}
+
+.bidondiezprecio{
+    color: $background-colorprecio;
+    font-weight: 400; 
+}
+
+.bidondiezprecio span{
+    text-decoration: line-through;
+    color: $background-colorletras;
+    text-align: center;
+}
+
+.bidonveinte{
+    width: 17rem;
+    background-color: $background-colorbidones;
+    text-align: center;
+}
+
+.bidonveinte img{
+@extend .mediciones;
+}
+
+.bidonveinteprecio{
+    color: $background-colorprecio;
+    font-weight: 600;
+}
+
+.bidonveinteprecio span{
+    
+    text-decoration: line-through;
+    color: $background-colorletras;
+}
+
+.botoncomprarchico{
+    width: 50%;
+    background-color: $background-colorbotones;
+    padding: 0.5rem;
+    display: block;
+    margin: auto;
+ @extend .cursor;
+}
+
+.botoncomprargrande{
+    width: 50%;
+    background-color: $background-colorbotones;
+    padding: 0.5rem;
+    display: block;
+    margin: auto;
+@extend .cursor;
+}
+
+.dispensernaturalchico, .ldispensernaturalchico{
+    width: 19rem;
+    background-color: $background-colorgrisazulado;
+    text-align: center;
+}
+
+.dispensernaturalchico img{
+@extend .mediciones;
+} 
+
+.ldispensernaturalchico img{
+@extend .mediciones;
+}
+
+.botoncomprardispensernatural, .lbotoncomprardispensernatural{
+    width: 50%;
+    height: 5%;
+    background-color: $background-colorgrisazulado;
+@extend .paddingdisplay;
+    margin: auto;
+@extend .cursor;
+}
+
+.ldispenserfriocalormediano{
+    width: 19rem;
+    background-color: $background-colorgrisazulado;
+    text-align: center;
+}
+
+.ldispenserfriocalormediano img{
+@extend .mediciones;
+}
+
+.lbotoncomprardispenserfriocalormediano{
+    width: 50%;
+    height: 5%;
+    background-color: $background-colorgrisazulado;
+@extend .paddingdisplay;
+    margin: auto;
+@extend .cursor;
+}
+
+.dispenserfriocalorgrande, .ldispenserfriocalorgrande{
+    width: 19rem;
+    background-color: $background-colorgrisazulado;
+    text-align: center;
+}
+
+.dispenserfriocalorgrande img, .ldispenserfriocalorgrande img{
+@extend .mediciones;
+}
+
+.botoncomprardispenserfriocalor, .lbotoncomprardispenserfriocalor{
+
+    width: 50%;
+    height: 5%;
+    background-color:$background-colorgrisazulado;
+@extend .paddingdisplay;
+    margin: auto;
+@extend .cursor;
+}
+
+.dispenserdisponibles-título{
+      background-color: rgba(24, 53, 112, 0.521);
+    text-align: center;  
+}
+
+.ldispenserfriocalorgrandeheladera{
+    width: 19rem;
+    background-color: $background-colorgrisazulado;
+    text-align: center;
+}
+
+.ldispenserfriocalorgrandeheladera img{
+    width: 17rem;
+    height:20rem;
+}
+
+.lbotoncomprardispenserfriocalor{
+     width: 50%;
+    height: 5%;
+    background-color: $background-colorgrisazulado;
+    padding: 0.5rem;
+    display: block;
+    margin: auto;
+@extend .cursor;
+}
+
+.frase{
+
+    color: $background-colorprecio;
+    font-weight: 900;
+}
+
+.todaslasimagenesdelosproductos-container, .todaslasimagenesdelosdispensers-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mapa-mardelplata{
+  margin: auto;
+}
+
+/* Estilos Footer*/
+
+.footerderechos{
+    font-weight: 500;
+    text-align: center;
+}
+
+.redessociales{
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(155, 155, 187, 0.733);
+}
+
+.footer-container-flex{
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    @extend .flexbasico;
+}
+
+.logotipoFooter{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    mix-blend-mode: multiply;  
+}
+
+.logotipoFooteruno{
+   width: 4rem;
+    height: 5rem;
+    object-fit: cover;
+    mix-blend-mode: multiply;   
+}
+
+footer{
+    background-color: rgba(195, 214, 219, 0.788);
+}
+
+.frase{
+    text-align: center;
+    text-shadow: 3px 3px rgba(55, 204, 192, 0.603);
+    font-size:x-large;
+}
+
+.footercontainer-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0.2rem;
+grid-row-gap: 0.2rem;
+text-align: center;
+}
+
+.footercontainerfaqs-grid{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-row-gap: 0px;
+text-align: center;
+}
+
+.footercontainer-primerhijo { grid-area: 1 / 1 / 2 / 4; background-color: $background-colorfooterhijos;}
+.footercontainer-segundohijo { grid-area: 2 / 1 / 3 / 4; background-color: $background-colorfooterhijosmedio;}
+.footercontainer-tercerhijo { grid-area: 3 / 1 / 4 / 4; background-color: $background-colorfooterhijosmediomas;}
+
+.footercontainerfaqs-primerhijo { grid-area: 1 / 1 / 2 / 2; background-color: $background-colorfooterhijos;}
+.footercontainerfaqs-segundohijo { grid-area: 2 / 1 / 3 / 2; background-color: rgba(46, 81, 145, 0.397);}
+.footercontainerfaqs-tercerhijo { grid-area: 3 / 1 / 4 / 2; background-color: rgba(39, 70, 128, 0.541);}
+.footercontainerfaqs-cuartohijo { grid-area: 4 / 1 / 5 / 2; background-color: rgba(20, 42, 85, 0.603);}
+.footercontainerfaqs-quintohijo { grid-area: 5 / 1 / 6 / 2; background-color: rgba(11, 32, 70, 0.644); }
+
+
+.footercontainer-primerhijo h4, .footercontainer-primerhijo p,
+.footercontainer-segundohijo h4, .footercontainer-segundohijo p,
+.footercontainer-tercerhijo h4, .footercontainer-tercerhijo p{
+    color: $background-coloroscuro;
+}
+
+.footercontainer-griddispensers{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0.2px;
+grid-row-gap: 0.2rem;
+}
+
+.footercontainer-primerhijodispensers, .footercontainer-primerhijocontacto { grid-area: 1 / 1 / 2 / 3; background-color: rgb(86, 86, 184); text-align: center;}
+.footercontainer-segundohijodispensers, .footercontainer-segundohijocontacto{ grid-area: 1 / 3 / 2 / 6; background-color: rgb(44, 70, 124); text-align: center;}
+.footercontainer-tercerhijodispensers, .footercontainer-tercerhijocontacto{ grid-area: 1 / 3 / 2 / 4; background-color: rgb(65, 54, 167); text-align: center;}
+
+
+ @media only screen and (min-width: 900px){
+   
+    ul,.index-header-flex{
+      flex-direction: row;
+   }
+.footercontainer-primerhijo h4{ grid-area: 1 / 1 / 2 / 4; background-color: $background-colorfooterhijos;}
+.footercontainer-segundohijo h4{ grid-area: 2 / 1 / 3 / 4; background-color: $background-colorfooterhijosmedio;}
+.footercontainer-tercerhijo h4{ grid-area: 3 / 1 / 4 / 4; background-color: $background-colorfooterhijosmediomas;}
+}
+
+.botonheader{
+    width: 100%;
+}
+
+ @media (max-width: 360px){
+
+ .index-parrafoheaderhistoria{
+    font-size: 14px !important;
+    padding: 5px !important;
+ }
+}
+ 
+@media (min-width: 768px) and (max-width:1023px){
+    .index-parrafoheaderhistoria{
+        font-size: 15px !important;
+        padding: 8px !important;
+ }
+}
+
+@media (min-width:767px){
+ 
+.historiadeontario{
+ font-size: 14px !important;
+ padding: 5px !important;
+  }
+ } 
+
+@media (max-width: 576px) {
+   .preguntas-header{
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logotipo, .l-logotipo, .logotipohistoria, .logotipopreguntas {
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem auto;
+  }
+
+  .contenedor-inferior-header, .contenedor-inferior-headerdispensers {
+    margin-left: 0;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .todaslasimagenesdelosproductos-container, .todaslasimagenesdelosdispensers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footercontainer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .preguntas-header {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll;
+  }
+}
