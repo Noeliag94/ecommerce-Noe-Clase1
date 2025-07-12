@@ -1,0 +1,92 @@
+/* Estilos Footer*/
+
+.footerderechos{
+    font-weight: 500;
+    text-align: center;
+}
+
+.redessociales{
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(155, 155, 187, 0.733);
+}
+
+.footer-container-flex{
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    @extend .flexbasico;
+}
+
+.logotipoFooter{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    mix-blend-mode: multiply;  
+}
+
+.logotipoFooteruno{
+   width: 4rem;
+    height: 5rem;
+    object-fit: cover;
+    mix-blend-mode: multiply;   
+}
+
+footer{
+    background-color: rgba(195, 214, 219, 0.788);
+}
+
+.frase{
+    text-align: center;
+    text-shadow: 3px 3px rgba(55, 204, 192, 0.603);
+    font-size:x-large;
+}
+
+.footercontainer-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0.2rem;
+grid-row-gap: 0.2rem;
+text-align: center;
+}
+
+.footercontainerfaqs-grid{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 1fr);
+grid-row-gap: 0px;
+text-align: center;
+}
+
+.footercontainer-primerhijo { grid-area: 1 / 1 / 2 / 4; background-color: $background-colorfooterhijos;}
+.footercontainer-segundohijo { grid-area: 2 / 1 / 3 / 4; background-color: $background-colorfooterhijosmedio;}
+.footercontainer-tercerhijo { grid-area: 3 / 1 / 4 / 4; background-color: $background-colorfooterhijosmediomas;}
+
+.footercontainerfaqs-primerhijo { grid-area: 1 / 1 / 2 / 2; background-color: $background-colorfooterhijos;}
+.footercontainerfaqs-segundohijo { grid-area: 2 / 1 / 3 / 2; background-color: rgba(46, 81, 145, 0.397);}
+.footercontainerfaqs-tercerhijo { grid-area: 3 / 1 / 4 / 2; background-color: rgba(39, 70, 128, 0.541);}
+.footercontainerfaqs-cuartohijo { grid-area: 4 / 1 / 5 / 2; background-color: rgba(20, 42, 85, 0.603);}
+.footercontainerfaqs-quintohijo { grid-area: 5 / 1 / 6 / 2; background-color: rgba(11, 32, 70, 0.644); }
+
+
+.footercontainer-primerhijo h4, .footercontainer-primerhijo p,
+.footercontainer-segundohijo h4, .footercontainer-segundohijo p,
+.footercontainer-tercerhijo h4, .footercontainer-tercerhijo p{
+    color: $background-coloroscuro;
+}
+
+.footercontainer-griddispensers{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 0.2px;
+grid-row-gap: 0.2rem;
+}
+
+.footercontainer-primerhijodispensers, .footercontainer-primerhijocontacto { grid-area: 1 / 1 / 2 / 3; background-color: rgb(86, 86, 184); text-align: center;}
+.footercontainer-segundohijodispensers, .footercontainer-segundohijocontacto{ grid-area: 1 / 3 / 2 / 6; background-color: rgb(44, 70, 124); text-align: center;}
+.footercontainer-tercerhijodispensers, .footercontainer-tercerhijocontacto{ grid-area: 1 / 3 / 2 / 4; background-color: rgb(65, 54, 167); text-align: center;}
+
+

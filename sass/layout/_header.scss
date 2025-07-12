@@ -1,0 +1,201 @@
+/* Estilos Header */
+
+.logotipo{
+    width: 8rem;
+    height: 8rem;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.l-logotipo{
+    width: 8rem;
+    height: 8rem;
+@extend .margin;
+}
+
+.logotipohistoria{
+    width: 13rem;
+    height: 11rem;
+    margin-top: 2%;
+}
+
+.logotipopreguntas{
+    filter: brightness(78%);
+    width: 9rem;
+    height: 9rem;
+@extend .margin;
+}
+
+.index-header, .dispensers-header, .contacto-header, .preguntas-header{
+
+    background-image: url(../imagenes/aguarevueltamejorada.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: brightness(135%);
+    background-position: center;
+    height: 100vh;
+    position:relative;    
+}
+
+.titulo-preguntas {
+  font-size: 2.5rem;
+  color: $background-coloroscuro;
+  margin-top: 10rem;
+  text-shadow: 4px 4px rgb(92, 240, 240);
+}
+.preguntas-header{
+    background-image: url(../imagenes/faqs2.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.contacto-header{
+  background-image: url(../imagenes/fondomardelplata.webp);
+}
+
+.dispensers-header{
+    background-image: url(../imagenes/camionetas.jpeg);
+    filter: brightness(105%);
+}
+
+.index-headerhistoria{
+    background-image: url(../imagenes/fotoreal.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: brightness(100%);
+    background-position: center;
+    height: 100vh;
+    position:relative;  
+    max-width: unset;
+}
+
+.contenedor-inferior-header, .contenedor-inferior-headerdispensers{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    
+    height: 50%;
+    max-width: 30rem;
+    margin-left: 1rem;
+}
+
+.contenedor-inferior-headerhistoria{
+  justify-content:center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.historiadeontario{
+  max-width: 1100px;
+  width: 100%;
+  height: 30%;
+  max-height: 100px;
+}
+
+.index-header-flex, .index-header-flex1{
+   
+    flex-direction: column;
+    justify-content: space-between;
+    @extend .flexbasico;
+}
+
+.navegacion-superior ul li a{
+
+    color:rgb(5, 5, 58);
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    text-shadow: 2px 2px $background-colortextshadow;
+    text-transform: uppercase;
+    font-style:italic;
+}
+
+.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a{
+        color:rgb(231, 240, 240);
+        text-transform: uppercase;
+        text-shadow: 2px 2px rgb(6, 73, 73);
+        font-weight: bolder;
+}
+
+.index-h1, .index-h1dispensers{
+    color: $background-colorindex;
+    text-decoration:underline;
+    background-size: 14rem;
+@extend .font;
+}
+
+.index-h1historia{
+    color: $background-colorindex;
+    text-decoration:underline;
+    background-size: 15rem;
+@extend .font;
+    text-align: center;
+    margin-top: 10%;
+    text-shadow: 4px 4px $background-colortextshadow;   
+}
+
+.test{
+    background-color: rgba(111, 111, 175, 0.959) !important;
+}
+
+.index-h1dispensers{
+  color: rgba(252, 253, 253, 0.973);
+  text-shadow:  4px 4px rgba(5, 20, 49, 0.938); 
+}
+
+.index-parrafoheader, .index-parrafoheaderdisoensers{
+    color:rgb(12, 43, 78);
+    font-weight: 600;   
+}
+
+.index-parrafoheaderhistoria{
+   color: $background-coloroscuro;
+   font-size: 16px;
+   padding: 10px;
+  font-weight: 900;
+  text-shadow:  3px 3px $background-colortextshadow;
+  text-align: justify;
+  margin-top: 3%;
+  display: flex;
+}
+
+.index-parrafoheaderdispensers{
+  color: $background-coloroscuro;
+  font-size: large;
+  font-weight: 900;
+  text-shadow:  3px 3px $background-colortextshadow;
+}
+
+.botonheader, .botonheaderdispensers{
+    width: 15rem;
+    background-color: $background-coloroscuro;
+    color: rgb(184, 207, 226);
+    border: none;
+    font-weight: 600;
+    padding: 12px 4px;
+    margin-top:1%;
+    cursor: pointer;
+}
+
+.botonheaderdispensers{
+    color: rgb(211, 221, 230);
+    background-color: rgba(22, 80, 119, 0.849);
+}
+
+.contacto-header-container{
+    font-size:x-large;
+    margin-top: -5%;
+    position: relative;
+    text-align: left;
+    margin: 1.5%;
+    text-shadow:  1.5px 1.5px rgba(175, 196, 238, 0.938); 
+}
