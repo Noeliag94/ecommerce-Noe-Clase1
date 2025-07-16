@@ -14,8 +14,8 @@
 }
 
 .logotipohistoria{
-    width: 13rem;
-    height: 11rem;
+    width: 8rem;
+    height: 6rem;
     margin-top: 2%;
 }
 
@@ -25,6 +25,8 @@
     height: 9rem;
 @extend .margin;
 }
+
+
 
 .index-header, .dispensers-header, .contacto-header, .preguntas-header{
 
@@ -124,6 +126,7 @@
         text-transform: uppercase;
         text-shadow: 2px 2px rgb(6, 73, 73);
         font-weight: bolder;
+        gap: 0.2rem;
 }
 
 .index-h1, .index-h1dispensers{

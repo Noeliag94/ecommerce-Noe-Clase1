@@ -1,4 +1,0 @@
-1.-Aplicar flex en el header 
-2.-Tips del profesor
-3.-Aplicar flex a ultimos modelos
-4.-Flex al footer 

@@ -21,11 +21,12 @@
  }
 }
  
-@media (min-width: 768px) and (max-width:1023px){
-    .index-parrafoheaderhistoria{
-        font-size: 15px !important;
-        padding: 8px !important;
- }
+
+@media (max-width: 576px) {
+  .index-parrafoheaderhistoria {
+    font-size: 14px;
+    padding: 0.5rem;
+  }
 }
 
 @media (min-width:767px){
