@@ -43,6 +43,65 @@ footer{
     font-size:x-large;
 }
 
+.chatbot-wpp {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 280px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: sans-serif;
+}
+
+.chat-header {
+  background: #25D366;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-weight: bold;
+}
+
+.chat-body {
+  padding: 15px;
+}
+
+.chat-body input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-body button {
+  margin-top: 10px;
+  width: 100%;
+  background: #25D366;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
 .footercontainer-grid {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
