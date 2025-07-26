@@ -1,5 +1,24 @@
 /* Estilos Main*/
 
+
+.fondobodyhistoria{
+background-image: url(../imagenes/aguarevueltamejorada.jpeg);
+ filter: brightness(95%);
+}
+
+    .historia-agua {
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6; /* interlineado en todo el párrafo donde relato la historia*/
+      color: #181749;
+    }
+
+        .historia-agua p {
+      margin-bottom: 1.2em; /* separación entre párrafo de nuestra historia Ontario*/
+    }
+
 .index-main, .index-main-dispensers{
 
     margin: 2rem 0;

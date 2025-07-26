@@ -69,9 +69,12 @@
 
 @media (max-width: 576px) {
   .preguntas-header {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll;
+    padding: 120px 15px 40px;
+    background-size: cover; /* o contain si preferís que no se recorte */
+    background-position: top center;
+  }
+
+  .logotipopreguntas {
+    width: 150px; /* más chico en móviles si es muy grande */
   }
 }

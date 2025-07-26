@@ -13,10 +13,11 @@
 @extend .margin;
 }
 
-.logotipohistoria{
-    width: 8rem;
-    height: 6rem;
-    margin-top: 2%;
+.logotipohistoria {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 
 .logotipopreguntas{
@@ -27,6 +28,9 @@
 }
 
 
+.oscurecer-fondohistoria{
+  padding-top: 100px;
+}
 
 .index-header, .dispensers-header, .contacto-header, .preguntas-header{
 
@@ -39,23 +43,51 @@
     position:relative;    
 }
 
-.titulo-preguntas {
-  font-size: 2.5rem;
-  color: $background-coloroscuro;
-  margin-top: 10rem;
-  text-shadow: 4px 4px rgb(92, 240, 240);
-}
-.preguntas-header{
-    background-image: url(../imagenes/faqs2.jpg);
-     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.contenedor-inferior-headerhistoria{
     text-align: center;
+    color: rgba(45, 45, 136, 0.952);
+    padding: 20px;
+}
 
+.index-h1historia{
+    font-size: 36px;
+    text-align: center;
+    
+
+}
+.index-parrafoheaderhistoria {
+  color: rgba(7, 7, 68, 0.973);
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 900;
+  text-shadow: 3px 3px rgba(249, 250, 252, 0.938);
+  text-align: justify;
+  margin-top: 3%;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.slogan-animado{
+  font-weight: bolder; /* acordarme que es el grosor */
+  font-size: 25px;
+  margin-top: 0px;  /* más cerca del p anterior */
+  margin-left: 2%;
+  animation: aparecer 2s ease-in-out 0.5s 4 forwards;
+  animation: moverYColor 3s ease-in-out infinite;
+  filter: drop-shadow();
+  background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.index-h1historia,
+.index-parrafoheaderhistoria {
+  filter: brightness(1.2); /* más brillo en texto */
+}
+
+.preguntas-header {
+  background-image: url(../imagenes/preguntas.webp);
 }
 
 .contacto-header{
@@ -121,7 +153,7 @@
     font-style:italic;
 }
 
-.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a{
+.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a, .navbarhistoria ul li a{
         color:rgb(231, 240, 240);
         text-transform: uppercase;
         text-shadow: 2px 2px rgb(6, 73, 73);
@@ -141,8 +173,9 @@
     text-decoration:underline;
     background-size: 15rem;
 @extend .font;
-    text-align: center;
+    text-align: left;
     margin-top: 10%;
+    margin-left: 3%;
     text-shadow: 4px 4px $background-colortextshadow;   
 }
 
@@ -155,7 +188,7 @@
   text-shadow:  4px 4px rgba(5, 20, 49, 0.938); 
 }
 
-.index-parrafoheader, .index-parrafoheaderdisoensers{
+.index-parrafoheader, .index-parrafoheaderdispensers{
     color:rgb(12, 43, 78);
     font-weight: 600;   
 }
@@ -168,6 +201,7 @@
   text-shadow:  3px 3px $background-colortextshadow;
   text-align: justify;
   margin-top: 3%;
+  margin-left: 1%;
   display: flex;
 }
 
