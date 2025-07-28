@@ -21,7 +21,7 @@
   height: 22rem;
 }
 
-.margin, .logotipopreguntas, .l-logotipo {
+.margin, .l-logotipo {
   margin-left: 2%;
   margin-top: 2%;
 }
@@ -87,6 +87,12 @@ ul {
   margin-left: 1%;
 }
 
+.logotipopreguntas {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1%;
+  margin-top: 1%;
+}
 
 .logotipo {
   width: 8rem;
@@ -108,9 +114,11 @@ ul {
 }
 
 .logotipopreguntas {
-  filter: brightness(78%);
-  width: 9rem;
-  height: 9rem;
+  filter: brightness(100%);
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1%;
+    margin-top: 1%;
 }
 
 .oscurecer-fondohistoria{
@@ -139,6 +147,13 @@ ul {
 
 .contacto-header {
   background-image: url(../imagenes/fondomardelplata.webp);
+}
+
+.navbardispensers, .container-fluid.{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+   background-color: #829b9b4b;
 }
 
 .dispensers-header {
@@ -185,7 +200,7 @@ ul {
   justify-content: space-between;
 }
 
-.navegacion-superior ul li a {
+.navegacion-superior ul li a{
   color: rgb(5, 5, 58);
   text-decoration: none;
   font-size: large;
@@ -195,10 +210,12 @@ ul {
   font-style: italic;
 }
 
-.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a, .navbarhistoria ul li a {
+.navegacion-superioreshistoria ul li a, .navbar-ontario, .navegacion-superiorcontacto ul li a, .navbarhistoria ul li a,.navegacion-superiordispensers ul li a{
   color: rgb(231, 240, 240);
   text-transform: uppercase;
   text-shadow: 2px 2px rgb(6, 73, 73);
+  font-weight: bolder;
+    font-size: large;
   font-weight: bolder;
 }
 
@@ -243,7 +260,26 @@ ul {
   margin-bottom: 5px;
 }
 
-.slogan-animado{
+.slogan-animado1{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 100%; 
+  margin: 0 auto;
+  padding: 10px;
+  animation: aparecer 2s ease-in-out 0.5s 4 forwards, moverYColor 3s ease-in-out infinite;
+  filter: drop-shadow();
+  background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-sizing: border-box;
+}
+
+.slogan-animado, .slogan-animado1{
   font-weight: bolder; /* acordarme que es el grosor */
   font-size: 25px;
   margin-top: 0px;  /* más cerca del p anterior */
@@ -333,16 +369,44 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
      
     }
 
-        .historia-agua p {
-      margin-bottom: 1.2em; /* separación entre párrafo de nuestra historia Ontario*/
-    }
+.imagencamionetas{
+  width: 21rem;
+  height: 19rem;
+  width: 70%; 
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+  border-width: 7px; 
+  border-style: solid; 
+  border-color: rgb(185, 188, 204); 
+  border-radius: 10px; 
+}
+        
+.historia-agua p {
+  margin-bottom: 1.2em; /* separación entre párrafo de nuestra historia Ontario*/
+  }
 
 .index-main, .index-main-dispensers {
   margin: 2rem 0;
   background-color: rgb(236, 245, 244);
 }
 
-.bodycontacto {
+.preguntas-header{
+   background-image: url(../imagenes/faq.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(100%);
+  width: 100%;
+  min-height: 60vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.bodycontacto, .dispensers-header, .bodyhistoria, .bodypreguntas,.preguntas-header {
   background-color: rgba(147, 166, 218, 0.733);
 }
 
@@ -443,6 +507,22 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
   text-align: center;
 }
 
+.dispenserfriocalorbajar {
+  transform: translateY(37px);
+}
+
+.Dispenserfriocalorvalor{
+  transform: translateY(34px);
+}
+
+.botoncomprardispenserfriocalor{
+  margin-top: 20px;
+}
+
+.botoncomprardispenserfriocalor {
+  transform: translateY(30px); 
+}
+
 .botoncomprardispenserfriocalor, .lbotoncomprardispenserfriocalor {
   width: 50%;
   height: 5%;
@@ -468,17 +548,13 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
 
 .lbotoncomprardispenserfriocalor {
   width: 50%;
-  height: 5%;
+  height: 7%;
   background-color: rgba(121, 139, 175, 0.521);
   padding: 0.5rem;
   display: block;
   margin: auto;
 }
 
-.frase {
-  color: rgb(35, 89, 136);
-  font-weight: 900;
-}
 
 .todaslasimagenesdelosproductos-container, .todaslasimagenesdelosdispensers-container {
   display: flex;
@@ -662,9 +738,10 @@ footer {
     padding: 5px !important;
   }
 }
-@media (max-width: 576px) {
+@media (min-widht: 767px) {
   .preguntas-header {
-    max-width: 140px;
+    font-size: 14px !important;
+    padding: 5px !important;
   }
 }
 @media (max-width: 576px) {
@@ -673,11 +750,19 @@ footer {
     height: 5rem;
     margin: 1rem auto;
   }
-  .contenedor-inferior-header, .contenedor-inferior-headerdispensers {
+  .contenedor-inferior-header{
     margin-left: 0;
     max-width: 90%;
     text-align: center;
   }
+
+  .contenedor-inferior-headerdispensers{
+    margin-left: 0;
+    max-width: 90%;
+    text-align: center;
+    top: 10%;
+  }
+  
   .todaslasimagenesdelosproductos-container, .todaslasimagenesdelosdispensers-container {
     flex-direction: column;
     align-items: center;

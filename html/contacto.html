@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="preconnect" href="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">"
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -18,7 +18,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 position-fixed top-0 test">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="../index.html">
       <img 
         class="logotipo" 
         src="../imagenes/aguaontarioimglogo.jpeg" 
@@ -76,6 +76,44 @@
   <h2 class="dondeencontrarnos-título">¿CÓMO NOS CONTACTÁS</h2>
 
 </main>
+
+<section class="py-5" style="background-color: #d7edf0dc;">
+  <div class="container">
+    <h2 class="mb-3 text-primary fw-bold">Atención Personalizada</h2>
+    <p class="mb-4 text-dark">Estamos a tu disposición para responder cualquier consulta.</p>
+
+    <div class="mb-2 text-dark">
+      <p><strong>Dirección:</strong>Florisbelo Acosta 6974</p>
+      <p><strong>Teléfono:</strong>+549 2236864379</p>
+      <p><strong>Email:</strong>aguaontario@gmail.com</p>
+    </div>
+
+    <div class="card shadow border-0">
+      <div class="card-body">
+        <h5 class="card-title mb-4 text-info fw-semibold">Formulario de contacto</h5>
+        <form action="https://formsubmit.co/aguaontario@gmail.com" method="POST">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre" name="nombre" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Apellido" name="apellido" required>
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Teléfono" name="telefono">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Comentarios" name="comentarios"></textarea>
+          </div>
+          <button type="submit" class="btn btn-info text-white px-4">Enviar mensaje</button>
+        </form>
+        <input type="hidden" name="_captcha" value="false">
+      </div>
+    </div>
+  </div>
+</section>
 
  <div class="footercontainer-griddispensers">
 <div class="footercontainer-primerhijocontacto">

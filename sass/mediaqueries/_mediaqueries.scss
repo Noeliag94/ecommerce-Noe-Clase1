@@ -70,11 +70,11 @@
 @media (max-width: 576px) {
   .preguntas-header {
     padding: 120px 15px 40px;
-    background-size: cover; /* o contain si preferís que no se recorte */
+    background-size: cover; /* o contain si quiero que no se recorte */
     background-position: top center;
   }
 
   .logotipopreguntas {
-    width: 150px; /* más chico en móviles si es muy grande */
+    width: 150px; /* más pequeño en celulares si es muy grande */
   }
 }

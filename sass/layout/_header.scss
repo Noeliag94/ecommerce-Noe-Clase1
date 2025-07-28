@@ -7,6 +7,13 @@
     margin-top: 1%;
 }
 
+.logotipopreguntas {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
 .l-logotipo{
     width: 8rem;
     height: 8rem;
@@ -66,21 +73,6 @@
   display: flex;
   margin-bottom: 5px;
 }
-
-.slogan-animado{
-  font-weight: bolder; /* acordarme que es el grosor */
-  font-size: 25px;
-  margin-top: 0px;  /* más cerca del p anterior */
-  margin-left: 2%;
-  animation: aparecer 2s ease-in-out 0.5s 4 forwards;
-  animation: moverYColor 3s ease-in-out infinite;
-  filter: drop-shadow();
-  background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .index-h1historia,
 .index-parrafoheaderhistoria {
   filter: brightness(1.2); /* más brillo en texto */

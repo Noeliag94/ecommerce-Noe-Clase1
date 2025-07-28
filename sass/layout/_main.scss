@@ -119,6 +119,10 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
 @extend .mediciones;
 }
 
+.dispenserfriocalorbajar {
+  transform: translateY(40px);
+}
+
 .botoncomprardispensernatural, .lbotoncomprardispensernatural{
     width: 50%;
     height: 5%;
