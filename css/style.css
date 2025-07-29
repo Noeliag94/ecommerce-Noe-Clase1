@@ -269,7 +269,7 @@ ul {
   filter: drop-shadow();
   background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
   background-size: 300% 300%;
-  -webkit-background-clip: text;
+ 
   -webkit-text-fill-color: transparent;
   box-sizing: border-box;
 }
@@ -284,7 +284,7 @@ ul {
   filter: drop-shadow();
   background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
   background-size: 300% 300%;
-  -webkit-background-clip: text;
+  
   -webkit-text-fill-color: transparent;
 }
 
@@ -388,10 +388,10 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
 
 .preguntas-header{
    background-image: url(../imagenes/faq.png);
-  background-size: cover;
+
 }
 
-.bodycontacto, .dispensers-header, .bodyhistoria, .bodypreguntas,.preguntas-header {
+.bodycontacto, .dispensers-header, .bodyhistoria, .bodypreguntas {
   background-color: rgba(147, 166, 218, 0.733);
 }
 
