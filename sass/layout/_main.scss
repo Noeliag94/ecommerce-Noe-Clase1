@@ -1,5 +1,3 @@
-/* Estilos Main*/
-
 .fondobodyhistoria{
 background-image: url(../imagenes/aguarevueltamejorada.jpeg);
  filter: brightness(110%);
@@ -41,21 +39,17 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
 .preguntas-header{
    background-image: url(../imagenes/faq.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(100%);
-  width: 100%;
-  min-height: 60vh; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
 }
 
 .bodycontacto, .dispensers-header, .bodyhistoria, .bodypreguntas,.preguntas-header {
   background-color: rgba(147, 166, 218, 0.733);
 }
+
+.bodypreguntas{
+  width: 100%;
+  min-height: 60vh; 
+}
+
 
 .index-main-contactarnos {
   margin: 2rem 0;
@@ -213,4 +207,3 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
 .mapa-mardelplata {
   margin: auto;
 }
-

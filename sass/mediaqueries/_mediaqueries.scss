@@ -1,24 +1,3 @@
-@media only screen and (min-width: 900px) {
-  ul, .index-header-flex {
-    flex-direction: row;
-  }
-  .footercontainer-primerhijo h4 {
-    grid-area: 1/1/2/4;
-    background-color: rgba(127, 158, 216, 0.589);
-  }
-  .footercontainer-segundohijo h4 {
-    grid-area: 2/1/3/4;
-    background-color: rgba(61, 97, 163, 0.767);
-  }
-  .footercontainer-tercerhijo h4 {
-    grid-area: 3/1/4/4;
-    background-color: rgba(23, 54, 110, 0.767);
-  }
-}
-.botonheader {
-  width: 100%;
-}
-
 @media (max-width: 360px) {
   .index-parrafoheaderhistoria {
     font-size: 14px !important;
@@ -43,7 +22,6 @@
     padding: 5px !important;
   }
 }
-
 @media (max-width: 576px) {
   .logotipo, .l-logotipo, .logotipohistoria, .logotipopreguntas {
     width: 5rem;
@@ -67,13 +45,11 @@
     flex-direction: column;
     align-items: center;
   }
-
   .footercontainer-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
   }
 }
-
 @media (max-width: 576px) {
   .preguntas-header {
     padding: 120px 15px 40px;
@@ -82,7 +58,7 @@
   }
 
   .logotipopreguntas {
-    width: 150px; /* más chico en móviles si es muy grande */
+    width: 160px;/* más chico en móviles si es muy grande */
   }
 }
 
