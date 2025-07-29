@@ -1,55 +1,3 @@
-/* Estilos Header */
-
-.logotipo{
-    width: 8rem;
-    height: 8rem;
-    margin-left: 1%;
-    margin-top: 1%;
-}
-
-.logotipopreguntas {
-  width: 6rem;
-  height: 6rem;
-  margin-left: 1%;
-  margin-top: 1%;
-}
-
-.l-logotipo{
-    width: 8rem;
-    height: 8rem;
-@extend .margin;
-}
-
-.logotipohistoria {
-    width: 7rem;
-    height: 7rem;
-    margin-left: 1%;
-    margin-top: 1%;
-}
-
-.logotipopreguntas{
-    filter: brightness(78%);
-    width: 9rem;
-    height: 9rem;
-@extend .margin;
-}
-
-
-.oscurecer-fondohistoria{
-  padding-top: 100px;
-}
-
-.index-header, .dispensers-header, .contacto-header, .preguntas-header{
-
-    background-image: url(../imagenes/aguarevueltamejorada.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    filter: brightness(135%);
-    background-position: center;
-    height: 100vh;
-    position:relative;    
-}
-
 .contenedor-inferior-headerhistoria{
     text-align: center;
     color: rgba(45, 45, 136, 0.952);
@@ -59,9 +7,179 @@
 .index-h1historia{
     font-size: 36px;
     text-align: center;
-    
-
+    margin-left: 3%;
 }
+.index-parrafoheaderhistoria{
+    font-size: 18px;
+    color: #252a79f1;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-left: 1%;
+}
+
+.logotipopreguntas {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1%;
+  margin-top: 1%;
+    filter: brightness(80%);
+}
+
+.logotipo {
+  width: 8rem;
+  height: 8rem;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+.l-logotipo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.logotipohistoria {
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+.logotipopreguntas {
+  filter: brightness(100%);
+    width: 7rem;
+    height: 7rem;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+
+.oscurecer-fondohistoria{
+  padding-top: 100px;
+}
+
+.index-header, .dispensers-header, .contacto-header, .preguntas-header {
+  background-image: url(../imagenes/aguarevueltamejorada.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(135%);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.index-h1historia,
+.index-parrafoheaderhistoria {
+  filter: brightness(1.2); /* más brillo en texto */
+}
+
+.preguntas-header{
+  background-image: url(../imagenes/preguntas.webp);
+  background-size: cover;
+  
+}
+
+.contacto-header {
+  background-image: url(../imagenes/fondomardelplata.webp);
+}
+
+.navbardispensers, .container-fluid{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+   background-color: #829b9b4b;
+}
+
+.dispensers-header {
+  background-image: url(../imagenes/camionetas.jpeg);
+  filter: brightness(110%);
+}
+
+.index-headerhistoria {
+  background-image: url(../imagenes/fotoreal.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(100%);
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  max-width: unset;
+}
+
+.contenedor-inferior-header, .contenedor-inferior-headerdispensers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 50%;
+  max-width: 30rem;
+  margin-left: 1rem;
+}
+
+.contenedor-inferior-headerhistoria {
+  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.historiadeontario {
+  max-width: 1100px;
+  width: 100%;
+  height: 30%;
+  max-height: 100px;
+}
+
+.index-header-flex, .index-header-flex1 {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navegacion-superior ul li a{
+  color: rgb(5, 5, 58);
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgba(249, 250, 252, 0.938);
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.navegacion-superioreshistoria ul li a, .navbar-ontario, .navegacion-superiorcontacto ul li a, .navbarhistoria ul li a,.navegacion-superiordispensers ul li a{
+  color: rgb(231, 240, 240);
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgb(6, 73, 73);
+  font-weight: bolder;
+    font-size: large;
+  font-weight: bolder;
+}
+
+.index-h1, .index-h1dispensers {
+  color: rgb(11, 44, 83);
+  text-decoration: underline;
+  background-size: 14rem;
+}
+
+.index-h1historia {
+  color: rgb(11, 44, 83);
+  text-decoration: underline;
+  background-size: 15rem;
+  text-align: left;
+  margin-top: 10%;
+  text-shadow: 4px 4px rgba(249, 250, 252, 0.938);
+}
+
+.test {
+  background-color: rgba(111, 111, 175, 0.959) !important;
+}
+
+.index-h1dispensers {
+  color: rgba(252, 253, 253, 0.973);
+  text-shadow: 4px 4px rgba(5, 20, 49, 0.938);
+}
+
+.index-parrafoheader, .index-parrafoheaderdisoensers {
+  color: rgb(12, 43, 78);
+  font-weight: 600;
+}
+
 .index-parrafoheaderhistoria {
   color: rgba(7, 7, 68, 0.973);
   font-size: 16px;
@@ -73,158 +191,94 @@
   display: flex;
   margin-bottom: 5px;
 }
-.index-h1historia,
-.index-parrafoheaderhistoria {
-  filter: brightness(1.2); /* más brillo en texto */
-}
 
-.preguntas-header {
-  background-image: url(../imagenes/preguntas.webp);
-}
-
-.contacto-header{
-  background-image: url(../imagenes/fondomardelplata.webp);
-}
-
-.dispensers-header{
-    background-image: url(../imagenes/camionetas.jpeg);
-    filter: brightness(105%);
-}
-
-.index-headerhistoria{
-    background-image: url(../imagenes/fotoreal.jpeg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    filter: brightness(100%);
-    background-position: center;
-    height: 100vh;
-    position:relative;  
-    max-width: unset;
-}
-
-.contenedor-inferior-header, .contenedor-inferior-headerdispensers{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    
-    height: 50%;
-    max-width: 30rem;
-    margin-left: 1rem;
-}
-
-.contenedor-inferior-headerhistoria{
-  justify-content:center;
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.historiadeontario{
-  max-width: 1100px;
-  width: 100%;
-  height: 30%;
-  max-height: 100px;
-}
-
-.index-header-flex, .index-header-flex1{
-   
-    flex-direction: column;
-    justify-content: space-between;
-    @extend .flexbasico;
-}
-
-.navegacion-superior ul li a{
-
-    color:rgb(5, 5, 58);
-    text-decoration: none;
-    font-size: large;
-    font-weight: bolder;
-    text-shadow: 2px 2px $background-colortextshadow;
-    text-transform: uppercase;
-    font-style:italic;
-}
-
-.navegacion-superioreshistoria ul li a, .navegacion-superiorcontacto ul li a, .navbarhistoria ul li a{
-        color:rgb(231, 240, 240);
-        text-transform: uppercase;
-        text-shadow: 2px 2px rgb(6, 73, 73);
-        font-weight: bolder;
-        gap: 0.2rem;
-}
-
-.index-h1, .index-h1dispensers{
-    color: $background-colorindex;
-    text-decoration:underline;
-    background-size: 14rem;
-@extend .font;
-}
-
-.index-h1historia{
-    color: $background-colorindex;
-    text-decoration:underline;
-    background-size: 15rem;
-@extend .font;
-    text-align: left;
-    margin-top: 10%;
-    margin-left: 3%;
-    text-shadow: 4px 4px $background-colortextshadow;   
-}
-
-.test{
-    background-color: rgba(111, 111, 175, 0.959) !important;
-}
-
-.index-h1dispensers{
-  color: rgba(252, 253, 253, 0.973);
-  text-shadow:  4px 4px rgba(5, 20, 49, 0.938); 
-}
-
-.index-parrafoheader, .index-parrafoheaderdispensers{
-    color:rgb(12, 43, 78);
-    font-weight: 600;   
-}
-
-.index-parrafoheaderhistoria{
-   color: $background-coloroscuro;
-   font-size: 16px;
-   padding: 10px;
-  font-weight: 900;
-  text-shadow:  3px 3px $background-colortextshadow;
-  text-align: justify;
-  margin-top: 3%;
-  margin-left: 1%;
+.slogan-animado1{
   display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 100%; 
+  margin: 0 auto;
+  padding: 10px;
+  animation: aparecer 2s ease-in-out 0.5s 4 forwards, moverYColor 3s ease-in-out infinite;
+  filter: drop-shadow();
+  background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-sizing: border-box;
 }
 
-.index-parrafoheaderdispensers{
-  color: $background-coloroscuro;
+.slogan-animado, .slogan-animado1{
+  font-weight: bolder; /* acordarme que es el grosor */
+  font-size: 25px;
+  margin-top: 0px;  /* más cerca del p anterior */
+  margin-left: 2%;
+  animation: aparecer 2s ease-in-out 0.5s 4 forwards;
+  animation: moverYColor 3s ease-in-out infinite;
+  filter: drop-shadow();
+  background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes aparecer{
+  from {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+}
+
+@keyframes moverYColor {
+  0% {
+    transform: translateY(0);
+    background-position: 0% 50%;
+  }
+  50% {
+    transform: translateY(-5px);
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: translateY(0);
+    background-position: 0% 50%;
+  }
+}
+
+.index-parrafoheaderdispensers {
+  color: rgba(7, 7, 68, 0.973);
   font-size: large;
   font-weight: 900;
-  text-shadow:  3px 3px $background-colortextshadow;
+  text-shadow: 3px 3px rgba(249, 250, 252, 0.938);
 }
 
-.botonheader, .botonheaderdispensers{
-    width: 15rem;
-    background-color: $background-coloroscuro;
-    color: rgb(184, 207, 226);
-    border: none;
-    font-weight: 600;
-    padding: 12px 4px;
-    margin-top:1%;
-    cursor: pointer;
+.botonheader, .botonheaderdispensers {
+  width: 15rem;
+  background-color: rgba(7, 7, 68, 0.973);
+  color: rgb(184, 207, 226);
+  border: none;
+  font-weight: 600;
+  padding: 12px 4px;
+  margin-top: 1%;
+  cursor: pointer;
 }
 
-.botonheaderdispensers{
-    color: rgb(211, 221, 230);
-    background-color: rgba(22, 80, 119, 0.849);
+.botonheaderdispensers {
+  color: rgb(211, 221, 230);
+  background-color: rgba(22, 80, 119, 0.849);
 }
 
-.contacto-header-container{
-    font-size:x-large;
-    margin-top: -5%;
-    position: relative;
-    text-align: left;
-    margin: 1.5%;
-    text-shadow:  1.5px 1.5px rgba(175, 196, 238, 0.938); 
+.contacto-header-container {
+  font-size: x-large;
+  margin-top: -5%;
+  position: relative;
+  text-align: left;
+  margin: 1.5%;
+  text-shadow: 1.5px 1.5px rgba(175, 196, 238, 0.938);
 }

@@ -92,6 +92,7 @@ ul {
   height: 6rem;
   margin-left: 1%;
   margin-top: 1%;
+  filter: brightness(50%);
 }
 
 .logotipo {
@@ -113,13 +114,7 @@ ul {
     margin-top: 1%;
 }
 
-.logotipopreguntas {
-  filter: brightness(100%);
-    width: 7rem;
-    height: 7rem;
-    margin-left: 1%;
-    margin-top: 1%;
-}
+
 
 .oscurecer-fondohistoria{
   padding-top: 100px;
@@ -149,7 +144,7 @@ ul {
   background-image: url(../imagenes/fondomardelplata.webp);
 }
 
-.navbardispensers, .container-fluid.{
+.navbardispensers, .container-fluid{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -394,21 +389,17 @@ background-image: url(../imagenes/aguarevueltamejorada.jpeg);
 .preguntas-header{
    background-image: url(../imagenes/faq.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: brightness(100%);
-  width: 100%;
-  min-height: 60vh; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  box-sizing: border-box;
 }
 
 .bodycontacto, .dispensers-header, .bodyhistoria, .bodypreguntas,.preguntas-header {
   background-color: rgba(147, 166, 218, 0.733);
 }
+
+.bodypreguntas{
+  width: 100%;
+  min-height: 60vh; 
+}
+
 
 .index-main-contactarnos {
   margin: 2rem 0;
@@ -676,9 +667,8 @@ footer {
 .footercontainer-griddispensers {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0.2px;
-  grid-row-gap: 0.2rem;
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
 .footercontainer-primerhijodispensers, .footercontainer-primerhijocontacto {
@@ -780,7 +770,27 @@ footer {
   }
 
   .logotipopreguntas {
-    width: 150px; /* más chico en móviles si es muy grande */
+    width: 160px;/* más chico en móviles si es muy grande */
+  }
+}
+
+@media (max-width: 768px) {
+  .footercontainer-griddispensers {
+    grid-template-columns: 1fr; /* una sola columna en pantallas chicas */
+  }
+
+  .footercontainer-primerhijodispensers,
+  .footercontainer-primerhijocontacto,
+  .footercontainer-segundohijocontacto,
+  .footercontainer-tercerhijocontacto {
+    grid-area: auto;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto;
   }
 }
 
