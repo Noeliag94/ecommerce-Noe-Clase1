@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="description" content="Agua Ontario - Servicio de agua de calidad en Mar del Plata. Dispensers, atención personalizada y contacto directo.">
     <title>Coderhouse Agua Ontario - Dispensers</title>
-      <link rel="preconnect" href="preconnect" href="https://fonts.googleapis.com">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/style.css" />
@@ -12,37 +13,35 @@
 <body class="index-headerhistoria">
      <header class="fondobodyhistoria">
 
-          <nav class="navbarhistoria navbar-expand-lg bg-body-tertiary w-100 position-fixed top-0 test">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="background-color: #87a5b1; z-index: 1050;">
   <div class="container-fluid">
     <a class="navbar-brand" href="../index.html">
-        <img 
-        class="logotipohistoria" 
-        src="../imagenes/Aguaontario.jpg" 
-        alt="Descripcion de la imagen"/>
+      <img class="logotipohistoria" src="../imagenes/Aguaontario.jpg" alt="Descripción del logotipo" height="50">
+    </a>
 
-                <nav class="navegacion-superiorcontacto">
-        </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
          <a class="nav-link" href="../index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./nuestrahistoria.html">Nuestra Historia</a>
+          <a class="nav-link" href="nuestrahistoria.html">Nuestra Historia</a>
         </li>
           <li class="nav-item">
-          <a class="nav-link" href="./dispensers.html">Dispensers</a>
+          <a class="nav-link" href="dispensers.html">Dispensers</a>
         </li>
            <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contacto</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
         </li>
            <li class="nav-item">
-          <a class="nav-link" href="./faqs.html">FAQS</a>
+          <a class="nav-link" href="faqs.html">FAQS</a>
         </li>
+      </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button class="btn btn-outline-success" type="submit">Buscador</button>
@@ -51,29 +50,18 @@
   </div>
 </nav>
 
-     <!--<nav class="navegacion-superior">
-          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./html/nuestrahistoria.html">Nuestra Historia</a></li>
-            <li><a href="./html/dispensers.html">Dispensers</a></li>
-            <li><a href="./html/contacto.html">Contacto</a></li>
-            <li><a href="./html/faqs.html">FAQs</a></li>
-
-                </ul>
-                </nav> -->               
+             
 
 <!-- HEADER CON MÁS ESPACIO - CORRECCIÓN PEDIDA POR EL PROFE-->
-  <header class="index-headerhistoria text-white">
-    <div class="oscurecer-fondohistoria px-4 py-5 mt-5">
-      <h1 class="index-h1historia">NUESTRA HISTORIA</h1>
-      <p class="index-parrafoheaderhistoria"> Agua Ontario cuenta con muchos años de experiencia.
-      </p>
-      <p class="slogan-animado"> ¡Eleginos, no te vas a arrepentir! 
-      </p>
-    </div>
-  </header>
+<header class="index-headerhistoria text-white">
+  <div class="oscurecer-fondohistoria">
+    <h1 class="index-h1historia">NUESTRA HISTORIA</h1>
+    <p class="index-parrafoheaderhistoria">Agua Ontario cuenta con muchos años de experiencia.</p>
+    <p class="slogan-animado">¡Eleginos, no te vas a arrepentir!</p>
+  </div>
+</header>
 
-  <main class="index-main-contactarnos container py-5">
+  <main class="index-main-contactarnos container-fluid py-5">
     <h2 class="dondeencontrarnos-título">¿Cómo se formó esta empresa?</h2>
 
     <div class="historia-agua">
@@ -122,7 +110,10 @@
 
    </div>
   </footer> 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

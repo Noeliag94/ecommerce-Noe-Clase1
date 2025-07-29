@@ -112,6 +112,8 @@ ul {
     height: 7rem;
     margin-left: 1%;
     margin-top: 1%;
+    height: 105px;
+    object-fit: contain;
 }
 
 
@@ -269,7 +271,7 @@ ul {
   filter: drop-shadow();
   background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
   background-size: 300% 300%;
- 
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   box-sizing: border-box;
 }
@@ -284,9 +286,10 @@ ul {
   filter: drop-shadow();
   background: linear-gradient(90deg, #162e6bee, #22a7a7, #1740a8);
   background-size: 300% 300%;
-  
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 @keyframes aparecer{
   from {
